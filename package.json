@@ -1,7 +1,7 @@
 {
   "name": "dhy",
   "version": "0.1.0",
-  "homepage": "https://davidhyoung.github.io/davidyoung/",
+  "homepage": "https://davidhyoung.github.io/",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
