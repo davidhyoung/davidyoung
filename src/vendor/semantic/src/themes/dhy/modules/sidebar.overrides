@@ -1,0 +1,10 @@
+/*******************************
+         Theme Overrides
+*******************************/
+
+.ui.visible.left.sidebar ~ .fixed,
+.ui.visible.left.sidebar ~ .pusher,
+.ui.visible.right.sidebar ~ .fixed,
+.ui.visible.right.sidebar ~ .pusher {
+  width: calc(~'100% - @{width}');
+}
