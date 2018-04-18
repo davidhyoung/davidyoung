@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Table } from 'semantic-ui-react';
 import Page from 'components/Page';
 
 export default class About extends React.Component {
@@ -12,14 +13,71 @@ export default class About extends React.Component {
       <Page>
         <h1>About me</h1>
         <p>
-          Spicy jalapeno bacon ipsum dolor amet pastrami deserunt anim jerky dolore swine bresaola ut. Dolor doner rump turducken kevin ut magna. Dolore salami kevin dolore do fatback excepteur ullamco nostrud. Ipsum nostrud ham ad duis reprehenderit est chicken pastrami ground round shank. Flank kevin beef short loin, aute ham shankle bresaola frankfurter. Ea turducken lorem, quis cupim boudin tongue labore pork loin reprehenderit nostrud est fatback pork sunt.
+          I'm a front end web and mobile developer.  I focus on cross-platform development, 
+          with an eye on maximizing the user experience for all devices.
         </p>
-        <p>
-          Swine andouille pork, do cupim commodo drumstick. Fatback excepteur reprehenderit qui tenderloin consectetur pastrami irure mollit chicken laboris pork. Id magna culpa dolore cupim quis in non meatball salami sunt jowl. Rump drumstick labore magna occaecat nostrud. Anim laboris venison pastrami. Sint hamburger nulla duis rump sunt, officia et cillum eu. Veniam mollit spare ribs eu, filet mignon commodo prosciutto in swine.
-        </p>
-        <p>
-          Reprehenderit lorem consectetur adipisicing, magna exercitation sint bresaola t-bone laborum tempor capicola. Velit ham laboris minim irure fatback commodo turkey kielbasa ex. Do occaecat pastrami aliquip. Veniam sirloin commodo, pariatur beef chuck in id mollit jerky do officia brisket ut enim. Chuck filet mignon veniam consequat ut. Boudin filet mignon consequat qui. In short ribs shank, ut burgdoggen tempor consequat sunt.
-        </p>
+
+        <h3>Programming Skills</h3>
+        <Table>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell width="3">Skill</Table.HeaderCell>
+              <Table.HeaderCell>Proficiency</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>HTML</Table.Cell>
+              <Table.Cell>For a sweet UX</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell rowspan="3">CSS</Table.Cell>
+              <Table.Cell>Less</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Sass</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>PostCSS</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell rowspan="3">Javascript</Table.Cell>
+              <Table.Cell>jQuery</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>React</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Angular</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+
+        <h3>Additional Skills</h3>
+        <Table>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell width="3">Skill</Table.HeaderCell>
+              <Table.HeaderCell>Proficiency</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>HTML</Table.Cell>
+              <Table.Cell>For a sweet UX</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell rowspan="3">CSS</Table.Cell>
+              <Table.Cell>Less</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Sass</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>PostCSS</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
         <Link to="/samples">
           See some samples of my work
         </Link>
