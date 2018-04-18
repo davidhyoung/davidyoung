@@ -1,16 +1,20 @@
+/**
+ * 
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+import { HashRouter } from 'react-router-dom';
+// app
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-//
+// styles
 import 'vendor/semantic/dist/semantic.min.css';
 import './index.css';
 
-ReactDOM.render((
-  <BrowserRouter>
-    <App/>
-  </BrowserRouter>
-), document.getElementById('root'));
+const history = createBrowserHistory();
 
-registerServiceWorker();
+ReactDOM.render((
+  <HashRouter history={history}>
+    <App />
+  </HashRouter>
+), document.getElementById('root'));

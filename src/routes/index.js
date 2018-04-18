@@ -7,18 +7,18 @@ import Samples from './Samples';
 
 export default [
   {
-    path: '/',
+    path: `${process.env.PUBLIC_URL}/`,
     name: 'Home',
     component: Home,
     exact: true,
   },
   {
-    path: '/about',
+    path: `${process.env.PUBLIC_URL}/about`,
     name: 'About me',
     component: About,
   },
   {
-    path: '/samples',
+    path: `${process.env.PUBLIC_URL}/samples`,
     name: 'Samples of my work',
     component: Samples,
   }
