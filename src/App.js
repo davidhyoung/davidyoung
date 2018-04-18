@@ -40,7 +40,6 @@ export default class App extends React.Component {
   );
 
   render() {
-    const { device } = viewStore;
     return (
       <AppContainer>
         <UiSidebar.Pushable>
@@ -48,11 +47,6 @@ export default class App extends React.Component {
           <MainView>
             <div>
               <SidebarToggle />
-              {(device === 'medium' || device === 'small') && (
-                <TabletNav secondary pointing>
-                  {routes.map(this.renderSmallNav)}
-                </TabletNav>
-              )}
               <Switch>
                 {routes.map(this.renderRoute)}
               </Switch>
@@ -65,6 +59,8 @@ export default class App extends React.Component {
 }
 
 const AppContainer = styled.div`
+  position: relative;
+  width: 100%;
   height: 100vh;
 `;
 
@@ -72,12 +68,6 @@ const MainView = styled(UiSidebar.Pusher)`
   flex: 1;
   border: 1px solid #d3d3d3;
   display: flex;
+  width: 100%;
   height: 100%;
-`;
-
-const TabletNav = styled(Menu)`
-  padding: 1em;
-  > a {
-    padding: 1em;
-  }
 `;

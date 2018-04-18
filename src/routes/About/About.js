@@ -31,7 +31,7 @@ export default class About extends React.Component {
               <Table.Cell>For a sweet UX</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell rowspan="3">CSS</Table.Cell>
+              <Table.Cell rowSpan="3">CSS</Table.Cell>
               <Table.Cell>Less</Table.Cell>
             </Table.Row>
             <Table.Row>
@@ -41,7 +41,7 @@ export default class About extends React.Component {
               <Table.Cell>PostCSS</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell rowspan="3">Javascript</Table.Cell>
+              <Table.Cell rowSpan="3">Javascript</Table.Cell>
               <Table.Cell>jQuery</Table.Cell>
             </Table.Row>
             <Table.Row>
@@ -67,7 +67,7 @@ export default class About extends React.Component {
               <Table.Cell>For a sweet UX</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell rowspan="3">CSS</Table.Cell>
+              <Table.Cell rowSpan="3">CSS</Table.Cell>
               <Table.Cell>Less</Table.Cell>
             </Table.Row>
             <Table.Row>

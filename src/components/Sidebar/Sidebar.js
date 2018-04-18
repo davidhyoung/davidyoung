@@ -34,7 +34,7 @@ export default class Sidebar extends React.Component {
     const { useSidebar, showSidebar } = viewStore;
 
     return (
-      <UiSidebar animation="push" visible={useSidebar && showSidebar}>
+      <AppSidebar animation="push" visible={useSidebar && showSidebar}>
         <NavHeader>
           <Link to="/">
             <Image circular src={profilePicture} />
@@ -42,10 +42,14 @@ export default class Sidebar extends React.Component {
           </Link>
         </NavHeader>
         {routes.map(this.renderNavItem)}
-      </UiSidebar>
+      </AppSidebar>
     );
   }
 }
+
+const AppSidebar = styled(UiSidebar)`
+  background: #f3f3f3;
+`;
 
 const NavHeader = styled.div`
   padding: 1em 3em;
