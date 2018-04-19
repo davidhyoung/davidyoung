@@ -2,19 +2,22 @@
  * 
  */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Table } from 'semantic-ui-react';
+import { Button, Table } from 'semantic-ui-react';
 import Page from 'components/Page';
 
 export default class About extends React.Component {
 
   render() {
+    const { history } = this.props;
     return (
       <Page>
         <h1>About me</h1>
         <p>
-          I'm a front end web and mobile developer.  I focus on cross-platform development, 
-          with an eye on maximizing the user experience for all devices.
+          My name is Dave, and I'm a programmer from Boston.  
+        </p>
+        <p>
+          My core skills are as a front end web developer, with a focus on developing 
+          mobile and cross-platform applications.
         </p>
 
         <h3>Programming Skills</h3>
@@ -78,9 +81,11 @@ export default class About extends React.Component {
             </Table.Row>
           </Table.Body>
         </Table>
-        <Link to="/samples">
-          See some samples of my work
-        </Link>
+        <div>
+          <Button color="purple" onClick={() => history.push('/samples')}>
+            See some samples of my work
+          </Button>
+        </div>
       </Page>
     ); 
   }

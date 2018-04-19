@@ -45,12 +45,10 @@ export default class App extends React.Component {
         <UiSidebar.Pushable>
           <Sidebar />
           <MainView>
-            <div>
-              <SidebarToggle />
-              <Switch>
-                {routes.map(this.renderRoute)}
-              </Switch>
-            </div>
+            <SidebarToggle />
+            <Switch>
+              {routes.map(this.renderRoute)}
+            </Switch>
           </MainView>
         </UiSidebar.Pushable>
       </AppContainer>
@@ -66,7 +64,6 @@ const AppContainer = styled.div`
 
 const MainView = styled(UiSidebar.Pusher)`
   flex: 1;
-  border: 1px solid #d3d3d3;
   display: flex;
   width: 100%;
   height: 100%;

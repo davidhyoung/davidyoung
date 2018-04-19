@@ -2,16 +2,16 @@
  * 
  */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Table } from 'semantic-ui-react';
+import { Button, Table } from 'semantic-ui-react';
 import Page from 'components/Page';
 
 export default class Home extends React.Component {
 
   render() {
+    const { history } = this.props;
     return (
       <Page>
-        <h1>My name is David Young!</h1>
+        <h1>Welcome</h1>
         <p>This website uses the following libraries:</p>
         <Table basic="very">
           <Table.Body>
@@ -35,9 +35,11 @@ export default class Home extends React.Component {
         <p>
           Swine andouille pork, do cupim commodo drumstick. Fatback excepteur reprehenderit qui tenderloin consectetur pastrami irure mollit chicken laboris pork. Id magna culpa dolore cupim quis in non meatball salami sunt jowl. Rump drumstick labore magna occaecat nostrud. Anim laboris venison pastrami. Sint hamburger nulla duis rump sunt, officia et cillum eu. Veniam mollit spare ribs eu, filet mignon commodo prosciutto in swine.
         </p>
-        <Link to="/about">
-          Learn more about me
-        </Link>
+        <div>
+          <Button color="purple" onClick={() => history.push('/about')}>
+            Learn more about me
+          </Button>
+        </div>
       </Page>
     ); 
   }
